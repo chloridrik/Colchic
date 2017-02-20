@@ -13,13 +13,15 @@
             height: 100%;
             margin: 0;
             padding: 0;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
         }
         
         .container {
-            background-color: #CCCCCC;
+            background-color: #88c5b5;
             max-width: 900px;
             width: 100%;
-            height: 100%;
             margin-left: auto;
             margin-right: auto;
             position: relative;
@@ -28,11 +30,11 @@
         .element {
             width: 100%;
             height: 150px;
-            border-radius: 8px;
-            border-style: solid;
-            border-width: 1px;
-            border-color: #333333;
-            background-color: #888888;
+            border-style: dashed;
+            border-width: 3px;
+            border-color: #FFFFFF;
+            background-color: #fd9a5e;
+            text-align: center;
         }
     </style>
 </head>
@@ -72,7 +74,7 @@
     <script language="javascript">
         Colchic.create(".container", 16, "30px", "30px")
             .media("screen and (max-width: 900px)", 8, "5px", "5px")
-            .media("screen and (max-width: 500px)", 1, "0px", "0px");
+            .media("screen and (max-width: 500px)", 1, "10px", "10px");
     </script>
 </body>
 
