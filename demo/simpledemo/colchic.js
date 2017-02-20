@@ -55,10 +55,7 @@ Colchic.prototype.build = function() {
         }
     }
 
-    css += this.root.container + " [class*='col-'] {padding-bottom:" + this.lineSpace + "}\n";
-    //css += this.root.container + " [class*='col-']:last-of-type {padding-right: 0;}\n";
-
-    //css += this.root.container + " .line{padding-bottom:" + this.lineSpace + "}\n";
+    css += this.root.container + " [class*='col-'] > * {margin-bottom:" + this.lineSpace + "}\n";
 
     if (this.mediaQuery !== null) css += "}\n";
 
