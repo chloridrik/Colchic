@@ -81,8 +81,10 @@ Colchic.prototype.addTotal = function() {
     var lines = container.querySelectorAll(".line");
     for (var i = 0; i < lines.length; i++) {
         var cols = lines[i].querySelectorAll("[class*='col-']");
+
         var totalSize = 0;
         for (var c = 0; c < cols.length; c++) {
+            if (cols[c].parentNode.parentNode != container) continue;
             var size = this.extractColSize(cols[c].className);
             totalSize += size;
             cols[c].className += " total-" + totalSize;
